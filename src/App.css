@@ -4,6 +4,9 @@
   color: var(--clr-fg);
   background-color: var(--clr-bg);
 }
+:root{
+  --border-radius: 30px;
+}
 
 .light {
   --clr-bg: #fcfcfc;
@@ -61,7 +64,7 @@ main {
   width: 0%;
   height: 0.2em;
   position: absolute;
-  bottom: 0;
+  bottom: -.6em;
   background-color: var(--clr-primary);
   transition: width 0.2s ease-in;
 }
@@ -89,6 +92,7 @@ main {
   font-size: 0.9rem;
   text-transform: lowercase;
   transition: transform 0.2s ease-in-out;
+  border-radius: var(--border-radius);
 }
 
 .btn--outline {

@@ -1,19 +1,19 @@
 const header = {
   // all the properties are optional - can be left empty or deleted
-  homepage: 'https://rajshekhar26.github.io/cleanfolio',
-  title: 'JS.',
+  homepage: 'https://portfolio.alainpaulin.com',
+  title: 'Alain Paulin.',
 }
 
 const about = {
   // all the properties are optional - can be left empty or deleted
-  name: 'John Smith',
-  role: 'Front End Engineer',
+  name: 'Alain Paulin Niyonkuru',
+  role: 'Full Stack Developer',
   description:
-    'Adipisicing sit fugit ullam unde aliquid sequi Facilis soluta facilis perspiciatis corporis nulla aspernatur. Autem eligendi rerum delectus modi quisquam? Illo ut quasi nemo ipsa cumque perspiciatis! Maiores minima consectetur.',
-  resume: 'https://example.com',
+    'I am an experienced and passionate Full Stack Developer specializing in innovative and user-friendly web applications. With expertise in both front-end and back-end development, I excel in creating seamless digital experiences from concept to deployment. My skills include HTML, CSS, JavaScript, React, Angular, Python, Java, and Node.js, along with frameworks like Django and Express.js. I prioritize clean code and stay updated with emerging technologies. My portfolio showcases successful projects such as e-commerce platforms and content management systems. I look forward to collaborating with you on your next digital venture.',
+  resume: 'https://resume.alainpaulin.com',
   social: {
-    linkedin: 'https://linkedin.com',
-    github: 'https://github.com',
+    linkedin: 'https://www.linkedin.com/in/alain-paulin-niyonkuru/',
+    github: 'https://github.com/alainpaulinn',
   },
 }
 
@@ -54,18 +54,15 @@ const skills = [
   'JavaScript',
   'TypeScript',
   'React',
-  'Redux',
   'SASS',
   'Material UI',
   'Git',
   'CI/CD',
-  'Jest',
-  'Enzyme',
 ]
 
 const contact = {
   // email is optional - if left empty Contact section won't show up
-  email: 'johnsmith@mail.com',
+  email: 'alainpaulinn@gmail.com',
 }
 
 export { header, about, projects, skills, contact }

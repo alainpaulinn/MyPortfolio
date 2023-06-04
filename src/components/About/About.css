@@ -13,7 +13,8 @@
 
 .about__desc {
   font-size: 1rem;
-  max-width: 600px;
+  max-width: 800px;
+  text-align: center;
 }
 
 .about__desc,
@@ -23,6 +24,7 @@
 
 .about .link--icon {
   margin-right: 0.8em;
+  display: flex;
 }
 
 .about .btn--outline {

@@ -3,10 +3,10 @@ import './Footer.css'
 const Footer = () => (
   <footer className='footer'>
     <a
-      href='https://github.com/rajshekhar26/cleanfolio'
+      href='https://portfolio.alainpaulin.com'
       className='link footer__link'
     >
-      Created By Raj Shekhar
+       Alain Paulin Niyonkuru © Copy right {new Date().getFullYear()}
     </a>
   </footer>
 )
