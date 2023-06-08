@@ -21,6 +21,7 @@
     "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts --openssl-legacy-provider build",
     "test": "react-scripts --openssl-legacy-provider test",
+    "buildstart":"react-scripts --openssl-legacy-provider build && react-scripts --openssl-legacy-provider start",
     "eject": "react-scripts --openssl-legacy-provider eject",
     "lint": "eslint .",
     "format": "prettier --write \"**/*.+(js|jsx|json|css|md)\"",
