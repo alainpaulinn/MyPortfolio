@@ -3,41 +3,45 @@ import GitHubIcon from '@material-ui/icons/GitHub'
 import LaunchIcon from '@material-ui/icons/Launch'
 import './ProjectContainer.css'
 
-const ProjectContainer = ({ project }) => (
-  <div className='project'>
-    <h3>{project.name}</h3>
+const ProjectContainer = ({ project }) => {
 
-    <p className='project__description'>{project.description}</p>
-    {project.stack && (
-      <ul className='project__stack'>
-        {project.stack.map((item) => (
-          <li key={uniqid()} className='project__stack-item'>
-            {item}
-          </li>
-        ))}
-      </ul>
-    )}
+  const { name, livePreviewUrl, sourceCodeUrl, description, stack } = project
 
-    {project.sourceCode && (
-      <a
-        href={project.sourceCode}
-        aria-label='source code'
-        className='link link--icon'
-      >
-        <GitHubIcon />
-      </a>
-    )}
+  return (
+    <div className='project'>
+      <h3>{name}</h3>
 
-    {project.livePreview && (
-      <a
-        href={project.livePreview}
-        aria-label='live preview'
-        className='link link--icon'
-      >
-        <LaunchIcon />
-      </a>
-    )}
-  </div>
-)
+      <p className='project__description'>{description}</p>
+      {stack.data.length > 0 && (
+        <ul className='project__stack'>
+          {stack.data.map((item) => (
+            <li key={item.id} className='project__stack-item'>
+              {item.attributes.name}
+            </li>
+          ))}
+        </ul>
+      )}
+
+      {sourceCodeUrl && (
+        <a
+          href={sourceCodeUrl}
+          aria-label='source code'
+          className='link link--icon'
+        >
+          <GitHubIcon />
+        </a>
+      )}
+
+      {livePreviewUrl && (
+        <a
+          href={livePreviewUrl}
+          aria-label='live preview'
+          className='link link--icon'
+        >
+          <LaunchIcon />
+        </a>
+      )}
+    </div>)
+}
 
 export default ProjectContainer

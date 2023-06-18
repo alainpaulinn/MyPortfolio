@@ -1,4 +1,5 @@
 import { useContext } from 'react'
+import Skeleton, { SkeletonTheme } from 'react-loading-skeleton';
 import { ThemeContext } from './contexts/theme'
 import Header from './components/Header/Header'
 import About from './components/About/About'
@@ -14,17 +15,18 @@ const App = () => {
 
   return (
     <div id='top' className={`${themeName} app`}>
-      <Header />
+      
+        <Header />
 
-      <main>
-        <About />
-        <Projects />
-        <Skills />
-        <Contact />
-      </main>
+        <main>
+          <About />
+          <Projects />
+          <Skills />
+          <Contact />
+        </main>
 
-      <ScrollToTop />
-      <Footer />
+        <ScrollToTop />
+        <Footer />
     </div>
   )
 }

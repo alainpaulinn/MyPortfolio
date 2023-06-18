@@ -5,6 +5,7 @@
   box-shadow: var(--shadow);
   transition: transform 0.2s linear;
   border-radius: var(--border-radius);
+  max-width: 20rem;
 }
 
 .project:hover {
@@ -18,6 +19,7 @@
 .project__stack {
   display: flex;
   flex-wrap: wrap;
+  gap: 0.5em;
   justify-content: center;
   margin: 1.2em 0;
 }
