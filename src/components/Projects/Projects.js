@@ -1,8 +1,5 @@
-import uniqid from 'uniqid'
-import { projects } from '../../portfolio'
 import ProjectContainer from '../ProjectContainer/ProjectContainer'
 import ProjectContainerSkeleton from '../ProjectContainerSkeleton/ProjectContainerSkeleton'
-import Skeleton from '../Skeleton/Skeleton'
 import './Projects.css'
 import useFetch from '../../hooks/useFetch'
 
@@ -28,7 +25,7 @@ const Projects = () => {
             <ProjectContainerSkeleton />
           </>
           : projectsData.data.map((project) => (
-            <ProjectContainer key={uniqid()} project={project.attributes} />
+            <ProjectContainer key={project.id} project={project.attributes} />
           ))}
       </div>
     </section>

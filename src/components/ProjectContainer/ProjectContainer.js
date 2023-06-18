@@ -1,4 +1,3 @@
-import uniqid from 'uniqid'
 import GitHubIcon from '@material-ui/icons/GitHub'
 import LaunchIcon from '@material-ui/icons/Launch'
 import './ProjectContainer.css'
@@ -6,7 +5,6 @@ import './ProjectContainer.css'
 const ProjectContainer = ({ project }) => {
 
   const { name, livePreviewUrl, sourceCodeUrl, description, stack } = project
-
   return (
     <div className='project'>
       <h3>{name}</h3>

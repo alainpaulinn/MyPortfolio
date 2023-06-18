@@ -1,5 +1,4 @@
 import { useContext } from 'react'
-import Skeleton, { SkeletonTheme } from 'react-loading-skeleton';
 import { ThemeContext } from './contexts/theme'
 import Header from './components/Header/Header'
 import About from './components/About/About'
