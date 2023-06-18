@@ -5,7 +5,8 @@
   box-shadow: var(--shadow);
   transition: transform 0.2s linear;
   border-radius: var(--border-radius);
-  max-width: 20rem;
+  min-width: 20rem;
+  max-width: 40rem;
 }
 
 .project:hover {
