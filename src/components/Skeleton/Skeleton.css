@@ -5,10 +5,10 @@
 
 @keyframes skeleton-loading {
     0% {
-        background-color: hsl(200, 2%, 27%);
+        background-color: rgba(187, 187, 187, 0.5);
     }
 
     100% {
-        background-color: hsl(200, 20%, 95%);
+        background-color: rgba(187, 187, 187, 0.169);
     }
 }
