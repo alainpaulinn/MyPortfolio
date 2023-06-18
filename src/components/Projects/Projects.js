@@ -22,11 +22,13 @@ const Projects = () => {
       <div className='projects__grid'>
         {loading === true
           ? <>
-            <ProjectContainerSkeleton/>
+            <ProjectContainerSkeleton />
+            <ProjectContainerSkeleton />
+            <ProjectContainerSkeleton />
+            <ProjectContainerSkeleton />
           </>
           : projectsData.data.map((project) => (
-            <ProjectContainerSkeleton />
-            // <ProjectContainer key={uniqid()} project={project.attributes} />
+            <ProjectContainer key={uniqid()} project={project.attributes} />
           ))}
       </div>
     </section>
