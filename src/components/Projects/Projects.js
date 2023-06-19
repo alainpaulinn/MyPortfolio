@@ -22,7 +22,6 @@ const Projects = () => {
             <ProjectContainerSkeleton />
             <ProjectContainerSkeleton />
             <ProjectContainerSkeleton />
-            <ProjectContainerSkeleton />
           </>
           : projectsData.data.map((project) => (
             <ProjectContainer key={project.id} project={project.attributes} />

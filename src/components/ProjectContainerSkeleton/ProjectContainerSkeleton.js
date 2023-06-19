@@ -7,8 +7,8 @@ function ProjectContainerSkeleton() {
         <div className='project'>
             <h3><Skeleton height='2rem' width='75%' /></h3>
 
-            <p className='project__description'><Skeleton height='1rem' width='100%' /></p>
-            <p className='project__description'><Skeleton height='1rem' width='100%' /></p>
+            <div className='project__description'><Skeleton height='1rem' width='100%' /></div>
+            <div className='project__description'><Skeleton height='1rem' width='100%' /></div>
 
             <ul className='project__stack'>
                 <Skeleton height='1.5rem' width='25%' />
