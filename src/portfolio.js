@@ -9,10 +9,10 @@ const header = {
 const about = {
   // all the properties are optional - can be left empty or deleted
   name: 'Alain Paulin Niyonkuru',
-  roles: ['Full Stack Developer', 'Front End Developer', 'Back End Developer'],
+  roles: ['Full Stack Developer', 'Front End Developer', 'Back End Developer', 'IAM Engineer'],
   description:
     'I am an experienced and passionate Full Stack Developer specializing in innovative and user-friendly web applications. With expertise in both front-end and back-end development, I excel in creating seamless digital experiences from concept to deployment. My skills include HTML, CSS, JavaScript, React, Angular, Python, Java, and Node.js, along with frameworks like Django and Express.js. I prioritize clean code and stay updated with emerging technologies. My portfolio showcases successful projects such as e-commerce platforms and content management systems. I look forward to collaborating with you on your next digital venture.',
-  resume: 'https://resume.alainpaulin.com',
+  resume: 'https://rxresu.me/alainpaulinn/my-resume',
   social: {
     linkedin: 'https://www.linkedin.com/in/alain-paulin-niyonkuru/',
     github: 'https://github.com/alainpaulinn',

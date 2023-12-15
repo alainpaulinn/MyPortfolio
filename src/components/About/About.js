@@ -6,6 +6,8 @@ import Skeleton from '../Skeleton/Skeleton';
 import { about } from '../../portfolio'
 import './About.css'
 
+const VOWELS = ['a', 'A', 'e', 'E', 'i', 'I', 'o', 'O', 'u', 'U']
+
 const About = () => {
   const { name, roles, description, resume, social } = about
 
@@ -21,7 +23,7 @@ const About = () => {
         </h1>
       )}
 
-      {roles && <h2 className='about__role'><Typewriter options={{ strings: roles.map(role => `A ${role}.`), autoStart: true, loop: true, }}/></h2>}
+      {roles && <h2 className='about__role'><Typewriter options={{ strings: roles.map(role => `A${VOWELS.includes(role.charAt(0))?'n':''} ${role}.`), autoStart: true, loop: true, }}/></h2>}
       
       {
         loading === true
@@ -31,7 +33,7 @@ const About = () => {
 
       <div className='about__contact center'>
         {resume && (
-          <a href={resume}>
+          <a href={resume} rel="noreferrer" target='_blank'>
             <span type='button' className='btn btn--outline'>
               Resume
             </span>
